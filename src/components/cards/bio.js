@@ -1,4 +1,5 @@
 import Image from "next/image";
+import TimeText from '../time-text'
 
 const Bio = () => {
     return (
@@ -8,15 +9,15 @@ const Bio = () => {
                 <div className="w-52">
                     Hi, I am Georgios Valtas 🇬🇷 <br/> a developer with a focus on websites and machine learning
 
-                    <p className="text-gray-500 text-xs relative top-2">~19/03/2001</p>
+                    <p className="text-gray-500 text-xs relative top-2">~ <TimeText date='2001-03-19' /> years ago</p>
                 </div>
                 <div className="w-28 h-28 relative left-6">
                     <Image 
-                    className="rounded-full object-cover w-full h-full relative -top-4" 
-                    width={256}
-                    height={256}
-                    src="/pfp.jpg" 
-                    alt="Profile picture"
+                        className="rounded-full object-cover w-full h-full relative -top-4" 
+                        width={256}
+                        height={256}
+                        src="/pfp.jpg" 
+                        alt="Profile picture"
                     />
                 </div>
             </div>
