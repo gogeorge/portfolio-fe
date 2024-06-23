@@ -1,4 +1,8 @@
 import Image from "next/image";
+import Bio  from '@/components/cards/bio.js'
+import WorkingOn  from '@/components/cards/working-on.js'
+import Contact from "@/components/cards/contact.js";
+
 
 export default function Home() {
   return (
@@ -7,12 +11,9 @@ export default function Home() {
       </div>
       {/* <div class="gradient"></div> */}
       <div className="grid auto-rows-[80px] grid-cols-3 gap-4 px-64 py-12 ">
-      {/* bio */}
-      <div className={`row-span-2 rounded-xl border border-slate-400/80 p-4 bg-slate-900`}></div>
-      {/* Currentlly working */}
-      <div className={`row-span-2 rounded-xl border border-slate-400/80 p-4 bg-slate-900`}></div>
-      {/* Contact */}
-      <div className={`row-span-2 rounded-xl border border-slate-400/80 p-4 bg-slate-900`}></div>
+      <Bio />
+      <WorkingOn />
+      <Contact />
       {/* Projects */}
       <div className={`row-span-5 rounded-xl border border-slate-400/80 p-4 bg-slate-900`}></div>
       {/* Projects */}

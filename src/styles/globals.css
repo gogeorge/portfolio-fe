@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* colors: 9f7436 */
 
 @media (prefers-color-scheme: dark) {
   :root {
